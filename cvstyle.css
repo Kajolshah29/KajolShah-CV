@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  background: url(header-1.svg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  color: #fff;
+  padding: 2rem 1rem;
+  border-radius: 0 0 12px 12px;
+}
+.header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+.title {
+  font-size: 1.2rem;
+  color: #64748B;
+  margin-top: 0.5rem;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.clickable {
+  display: flexbox;
+  flex-direction: row;
+}
+
+.linkedin,
+.website,
+.github {
+  display: flex;
+  width: 100px;
+  height: 30px;
+  border-radius: 120px;
+}
+
+.github {
+
+  border: 0.5px solid #0A66C2;
+  background: #F1F8FF;
+}
+
+.linkedin {
+  border: 0.5px solid #222;
+  background: #F2F2F2;
+}
+
+.website {
+  border: 0.5px solid #F24E1E;
+  background: #FFF4F1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+/*Sections*/
+section{
+  margin-bottom: 2rem;
+}
+h2{
+  font-size: 1.4rem;
+  /* padding-bottom: 4px; */
+  color: #2c3e50;
+}
+h3{
+  font-size: 1.1rem;
+  color: #2d3436;
+  margin-bottom: 0.2rem;
+}
