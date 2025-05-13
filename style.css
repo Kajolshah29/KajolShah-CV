@@ -202,7 +202,7 @@ time {
   display: flex;
   gap: 2rem;
   margin-bottom: 2rem;
-  
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .projects-heading {
