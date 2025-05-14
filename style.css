@@ -3,18 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html{
+  font-size: 100%;
+}
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
   background-color: #ffffff;
   color: #333;
   padding: 20px;
-  max-width: 900px;
+  max-width: 60%;
   margin: auto;
 }
-.container{
-  background-color: #111827;
+.container {
+  background-image: url("https://www.transparenttextures.com/patterns/cream-dust.png");
+  background-repeat: repeat;
+  background-color: #fdfdfd; /* optional soft white base */
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
 }
 
 .header {
@@ -277,11 +284,91 @@ time {
 }
 
 @media (max-width: 768px) {
-  .skills-tools-row {
-    flex-direction: column;
+  html{
+    font-size: 90%;
+  }
+    .header h1 {
+    font-size: 2rem;
   }
 
-  .section-heading {
-    margin-bottom: 1rem;
+  .title {
+    font-size: 1rem;
+  }
+  .skills-tools-row,
+  .projects-row,
+  .experience-row,
+  .edu-row {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .section-heading,
+  .edu-heading,
+  .experience-heading,
+  .projects-heading {
+    font-size: 1.2rem;
+  }
+
+  .tag {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 75%;
+  }
+
+  .header h1 {
+    font-size: 1.75rem;
+  }
+
+  .title {
+    font-size: 0.95rem;
+  }
+
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section-heading,
+  .edu-heading,
+  .experience-heading,
+  .projects-heading {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  .skills-tools-row,
+  .projects-row,
+  .experience-row,
+  .edu-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .skills-group h4 {
+    font-size: 0.95rem;
+  }
+
+  .tag {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .experience-content,
+  .projects-content,
+  .skills-content,
+  .edu-details {
+    gap: 1rem;
+  }
+
+  .container {
+    padding: 0 1rem;
   }
 }
