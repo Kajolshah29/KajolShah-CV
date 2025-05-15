@@ -152,7 +152,7 @@ section {
 }
 
 /* ===== Rows & Content Layout ===== */
-
+.about-row,
 .edu-row,
 .experience-row,
 .projects-row,
@@ -206,6 +206,7 @@ section {
   align-items: center;
   gap: 0.4rem;
 }
+.about-details,
 .edu-details,
 .experience-content,
 .projects-content,
@@ -253,6 +254,76 @@ time {
   color: #111827;
   margin-bottom: 0.5rem;
 }
+.contact-section {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f9fafb;
+  border-radius: 12px;
+}
+
+.contact-section .section-heading {
+  font-size: 2rem;         /* Increased font size */
+  font-weight: 800;        /* Thicker font */
+  color: #1f2937;          /* Deep neutral gray */
+  margin-bottom: 1rem;
+}
+
+.contact-section p {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-top: 0.5rem;
+}
+
+.email-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.site-footer {
+  padding: 1.5rem 1rem;
+
+  border-top: 1px solid #e5e7eb;
+  margin-top: 2rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.footer-left {
+  margin: 0;
+}
+
+.footer-right {
+  color: #1d1d2d;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.footer-right:hover {
+  transform: scale(1.1);
+}
+
+.footer-right i {
+  margin-right: 0;
+}
+
+
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
